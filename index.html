@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto final</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="img/ibm_logo.jfif" type="image/x-icon">
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6b6dae38-6e2a-417d-9881-336bd0bc5268", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "9ff8648d-ad09-4fd1-ae14-0dcb52228188", // The ID of your service instance.
+            onLoad: function(instance) { 
+                instance.updateLocale('pt-br')
+                instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <header class="header">
+        Chat Amigo
+    </header>
+    
+    <section class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="quem-somos.html">Quem somos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <article class="content">
+            <h1>Home</h1>
+            <p>Aplicação web para implementação do chatbot em desenvolvimento para o MVP.
+            </p>
+        </article>
+    </section>
+
+</body>
+</html>
